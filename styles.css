@@ -1,26 +1,8 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ General Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-body {
-    background-color: lightblue;
-    color: azure;
-    font-size: 1.1em;
-    font-family: Arial, sans-serif;
-}
-h1 {
-    color: coral;
-    text-align: center;
-    font-weight: bold;
-}
-
-table, th, td {
-border: 1px solid black;
-padding: 15px;
-}
-table {
-border-collapse: collapse;
-}
 
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~ Menu Style ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ Dropdown Menu Style ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .menubtn {
   background-color: #04AA6D;
   color: white;

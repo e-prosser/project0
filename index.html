@@ -1,21 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Main Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="styles.css">
 
     </head>
     <body>
-        <h1>Hello, world! Hello again!</h1>
-        <div class="menu">
-          <button class="menubtn">Menu</button>
-          <div class="menu-content">
-            <a href="page1.html">Page 1</a>
-            <a href="page2.html">Page 2</a>
-            <a href="page3.html">Page 3</a>
+      <!-- Webpage heading -->
+      <div class="col-xl-12 border bg-primary text-white">
+          <h1 class ="display-2 text-center">Website</h1>
+          <h4 class ="text-center">Homepage</h4>
+
+          <!-- Dropdown menu -->
+          <div class="menu">
+            <button class="menubtn">Menu</button>
+            <div class="menu-content">
+              <a href="page1.html">Page 1</a>
+              <a href="page2.html">Page 2</a>
+              <a href="page3.html">Page 3</a>
+            </div>
+          </div>
+      </div>
+
+      <!-- Some test writing -->
+      <div>
+        <h1> This is some heading </h1>
+        <p> this is paragraph</p>
+      </div>
+
+      <!-- Website Contents Summary -->
+      <div class="col-md-6 p-5 mx-auto accordion" id="SummaryAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="HeadingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Page 1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="HeadingOne" data-bs-parent="#SummaryAccordion">
+            <div class="accordion-body">
+            This is the contents of<strong> <a href="page1.html">Page 1</a>:</strong>
+            </div>
           </div>
         </div>
-        <div>Hello a third time</div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="HeadingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Page 2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="HeadingTwo" data-bs-parent="#SummaryAccordion">
+            <div class="accordion-body">
+              This is the contents of<strong> <a href="page2.html">Page 2</a>:</strong>.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="HeadingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Page 3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="HeadingThree" data-bs-parent="#SummaryAccordion">
+            <div class="accordion-body">
+              This is the contents of<strong> <a href="page3.html">Page 3</a>:</strong>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </body>
+
 </html>
