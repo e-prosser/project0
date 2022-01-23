@@ -1,23 +1,28 @@
-$body: lightblue;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ General Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+$body: #E8F3FF;
 $primary-color: blue;
 $footer: #AA8439;
 $font-stack: Arial, sans-serif;
 
-body {
+.main-content {
   background: $body;
+  text-align: center;
   font: $font-stack;
+
+  p {
+    color: $primary-color;
+  }
+
+  a {
+    color: $primary-color;
+  }
 }
 
-p {
-  color: $primary-color;
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ Table Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.table tr.white-bg{
+  background: white;
 }
-
-a {
-  color: $primary-color;
-}
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~ General Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 
