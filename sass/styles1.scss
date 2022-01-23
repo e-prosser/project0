@@ -4,7 +4,8 @@ $primary-color: blue;
 $footer: #AA8439;
 $font-stack: Arial, sans-serif;
 
-.main-content {
+/* SCSS Nesting */
+body {
   background: $body;
   text-align: center;
   font: $font-stack;
@@ -29,7 +30,7 @@ $font-stack: Arial, sans-serif;
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ Dropdown Menu Style ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 $menubtn-colour: #04AA6D;
 .menubtn {
-  background-color: $menubtn-colour;
+  background-color: #04AA6D;
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -39,7 +40,9 @@ $menubtn-colour: #04AA6D;
 }
 
 .menu {
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
   display: inline-block;
 }
 
