@@ -29,11 +29,7 @@ body {
 #img-grid{
     * {
     box-sizing: border-box;
-  }
-
-  .header {
-    text-align: center;
-    padding: 32px;
+    align-items: center;
   }
 
   .row {
@@ -46,11 +42,12 @@ body {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
+    align-items: center;
   }
 
   .column img {
+    margin-left: 12px;
     margin-top: 8px;
-    vertical-align: middle;
   }
 
   @media screen and (max-width: 800px) {
@@ -91,7 +88,7 @@ $menubtn-colour: #04AA6D;
 }
 
 .menu {
-  position: fixed;
+  position: absolute;
   left: 1px;
   top: 1px;
   display: inline-block;
