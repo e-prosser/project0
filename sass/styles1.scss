@@ -1,14 +1,14 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ General Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-$body: #E8F3FF;
+$bg-body: #E8F3FF;
 $primary-color: blue;
 $footer: #AA8439;
-$font-stack: Arial, sans-serif;
+$fonts: Arial, sans-serif;
 
 /* SCSS Nesting */
 body {
-  background: $body;
+  background: $bg-body;
   text-align: center;
-  font: $font-stack;
+  font: $fonts;
 
   p {
     color: $primary-color;
@@ -19,8 +19,16 @@ body {
   }
 }
 
+/* CSS Selector */
+#main-content {
+  color: black;
+  text-align: left;
+  margin-left: 27.5%;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ Table Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Css class */
+/* Set table background to be white */
 .table tr.white-bg{
   background: white;
 }
@@ -41,8 +49,8 @@ $menubtn-colour: #04AA6D;
 
 .menu {
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: 1px;
   display: inline-block;
 }
 
