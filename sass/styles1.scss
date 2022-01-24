@@ -9,15 +9,19 @@ body {
   background: $bg-body;
   text-align: center;
   font: $fonts;
+  /* Resrict overflow scrolling */
+  overflow-x: hidden;
 
+  /* Paragraph colour */
   p {
     color: $primary-color;
   }
-
+  /* Link Colour */
   a {
     color: $primary-color;
   }
 }
+
 
 /* CSS Selector */
 #main-content {
@@ -40,9 +44,8 @@ body {
 
   .column {
     flex: 25%;
-    max-width: 25%;
+    max-width: 24.5%;
     padding: 0 4px;
-    align-items: center;
   }
 
   .column img {
