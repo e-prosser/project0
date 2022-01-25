@@ -107,10 +107,12 @@ $menubtn-colour: #04AA6D;
   background-color: #04AA6D;
   color: white;
   padding: 10px;
-  font-size: 16px;
+  font-size: 1.25vw;
   border: none;
   text-align: center;
-  min-width: 100px;
+  width: 10vw;
+  height:auto;
+  max-width: 100px;
 }
 
 .menu {
@@ -125,10 +127,12 @@ $menubtn-colour: #04AA6D;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-
+  width: 10vw;
+  height:auto;
+  max-width: 100px;
+  font-size: 1.25vw;
 }
 
 /* Link styling */
