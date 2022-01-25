@@ -1,6 +1,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ General Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 $bg-body: #E8F3FF;
 $primary-color: blue;
+$p-color: black;
 $footer: #AA8439;
 $fonts: Arial, sans-serif;
 
@@ -14,7 +15,10 @@ body {
 
   /* Paragraph colour */
   p {
-    color: $primary-color;
+    color: $p-color;
+    text-align: left;
+    margin-left: 1px;
+    font-size: medium;
   }
   /* Link Colour */
   a {
@@ -24,10 +28,28 @@ body {
 
 
 /* CSS Selector */
+/* Select styling for main written content of page*/
 #main-content {
   color: black;
-  text-align: left;
-  margin-left: 27.5%;
+  text-align: center;
+  display: inline-block;
+  max-width: 50%;
+}
+
+#leftj-pic{
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  display: inline-block;
+
+}
+
+.responsive-img-sm{
+  width: 100%;
+  max-width: 10vw;
+  heigth: auto;
+  max-height: 120px;
+  border-radius: 8px;
 }
 
 #img-grid{
@@ -44,7 +66,7 @@ body {
 
   .column {
     flex: 25%;
-    max-width: 24.5%;
+    max-width: 25%;
     padding: 0 4px;
   }
 
@@ -68,6 +90,7 @@ body {
   }
 
 }
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ Table Style  ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* Css class */
@@ -121,3 +144,39 @@ $menubtn-colour: #04AA6D;
 .menu-content a:hover {background-color: #ddd;}
 .menu:hover .menu-content {display: block;}
 .menu:hover .menubtn {background-color: #3e8e41;}
+
+/* Acocrdion Styling */
+/* Overide colours when panel is open */
+.accordion-button:not(.collapsed) {
+	background-color: #F0F0F0 !important;
+}
+
+
+/* Footer Stlye */
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+/* Logo background */
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1vw solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Logos */
+.socials a img{
+    font-size: 1.1rem;
+    width: 4vw;
+    height:auto;
+    max-width: 20px;
+  }
